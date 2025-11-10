@@ -1,0 +1,24 @@
+ {% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'books/style.css' %}">
+    <meta charset="UTF-8">
+    <title>Login - BookVerse</title>
+    <style>
+        body { font-family: 'Georgia', serif; background-color: #f5f0e6; color: #5a3e36; display: flex; justify-content: center; align-items: center; height: 100vh; }
+        form { background-color: #f0e6dc; padding: 2rem; border-radius: 8px; }
+        input { display: block; margin: 1rem 0; padding: 0.5rem; width: 100%; }
+        button { padding: 0.5rem 1rem; background-color: #8b5e3c; color: white; border: none; cursor: pointer; }
+        button:hover { background-color: #a07050; }
+    </style>
+</head>
+<body>
+    <form method="post">
+        {% csrf_token %}
+        <h2>Login</h2>
+        {{ form.as_p }}
+        <button type="submit">Login</button>
+    </form>
+</body>
+</html>

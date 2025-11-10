@@ -1,0 +1,22 @@
+ {% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'books/style.css' %}">
+    <meta charset="UTF-8">
+    <title>BookVerse</title>
+    <style>
+        body { font-family: 'Georgia', serif; background-color: #f5f0e6; color: #5a3e36; margin: 0; padding: 0; }
+        .container { max-width: 800px; margin: auto; padding: 2rem; text-align: center; }
+        a { color: #8b5e3c; text-decoration: none; font-weight: bold; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to BookVerse 📚</h1>
+        <p>Cozy reads and warm stories at your fingertips.</p>
+        <a href="/books/">See our books</a>
+    </div>
+</body>
+</html>
